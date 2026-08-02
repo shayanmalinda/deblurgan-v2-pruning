@@ -1,0 +1,22 @@
+{
+  "ratio": 0.3,
+  "before_ft": {
+    "psnr": 22.398219024973937,
+    "ssim": 0.7259009490953038,
+    "latency_ms": 56.76587149635577,
+    "peak_memory_gb": 1.702729728,
+    "model_size_mb": 244.677621
+  },
+  "after_ft": {
+    "psnr": 25.22027855586961,
+    "ssim": 0.7739197951669534,
+    "latency_ms": 180.77580450240785,
+    "peak_memory_gb": 1.765398528,
+    "model_size_mb": 244.677621
+  },
+  "best_epoch": 30,
+  "best_val_psnr": 25.19840722138686,
+  "eff_params": 43237539,
+  "total_params": 60929291,
+  "theoretical_size_mb": 172.950156
+}

@@ -1,0 +1,84 @@
+{
+  "baseline": {
+    "psnr": 24.79966521421946,
+    "ssim": 0.7937876561322267,
+    "latency_ms": 57.62356358022845,
+    "peak_memory_gb": 0.887744,
+    "model_size_mb": 244.677621
+  },
+  "config": {
+    "pruning_ratios": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "num_epochs": 50,
+    "batch_size": 2,
+    "lr_g": 5e-05,
+    "lr_d": 5e-05,
+    "crop_size": 256,
+    "pixel_weight": 0.5,
+    "perceptual_weight": 0.006,
+    "adversarial_weight": 0.01,
+    "dataset": "GoPro official split (2,103 train / 1,111 test)",
+    "val_every": 5,
+    "val_images": 100
+  },
+  "10pct_before_finetuning": {
+    "psnr": 24.67272197878385,
+    "ssim": 0.7514986179527574,
+    "latency_ms": 57.83472656125833,
+    "peak_memory_gb": 1.370944,
+    "model_size_mb": 244.677621
+  },
+  "10pct_after_finetuning": {
+    "psnr": 25.217411195262052,
+    "ssim": 0.7889229219960957,
+    "latency_ms": 175.43464176909185,
+    "peak_memory_gb": 1.763648,
+    "model_size_mb": 244.677621
+  },
+  "10pct_best_epoch": 5,
+  "10pct_best_val_psnr": 25.37626296637125,
+  "10pct_eff_params": 55084861,
+  "10pct_total_params": 60929291,
+  "10pct_theoretical_size_mb": 220.339444,
+  "30pct_before_finetuning": {
+    "psnr": 22.398219024973937,
+    "ssim": 0.7259009490953038,
+    "latency_ms": 56.76587149635577,
+    "peak_memory_gb": 1.702729728,
+    "model_size_mb": 244.677621
+  },
+  "30pct_after_finetuning": {
+    "psnr": 25.22027855586961,
+    "ssim": 0.7739197951669534,
+    "latency_ms": 180.77580450240785,
+    "peak_memory_gb": 1.765398528,
+    "model_size_mb": 244.677621
+  },
+  "30pct_best_epoch": 30,
+  "30pct_best_val_psnr": 25.19840722138686,
+  "30pct_eff_params": 43237539,
+  "30pct_total_params": 60929291,
+  "30pct_theoretical_size_mb": 172.950156,
+  "50pct_before_finetuning": {
+    "psnr": 24.008579098734693,
+    "ssim": 0.7628433103357749,
+    "latency_ms": 68.58740534101214,
+    "peak_memory_gb": 1.774697472,
+    "model_size_mb": 244.677621
+  },
+  "50pct_after_finetuning": {
+    "psnr": 24.585577361744715,
+    "ssim": 0.7609976301193917,
+    "latency_ms": 171.82141272974272,
+    "peak_memory_gb": 1.715400192,
+    "model_size_mb": 244.677621
+  },
+  "50pct_best_epoch": 50,
+  "50pct_best_val_psnr": 24.602784426838056,
+  "50pct_eff_params": 31264283,
+  "50pct_total_params": 60929291,
+  "50pct_theoretical_size_mb": 125.057132
+}
